@@ -26,10 +26,12 @@
 %%%%%%%%%%
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
-\usepackage{subcaption}
+\usepackage{caption}
 \usepackage{amssymb}
 \usepackage{pifont}
+\usepackage{longtable,booktabs}
 
+\DeclareCaptionFormat{smol}{ \tiny {\color{blue}Fig#2} #3}
 
 %%%%%%%%%%
 % metadata
@@ -45,7 +47,7 @@ Michael Wilson and
 Zahari Kassabov and
 Tanjona Rabemananjara
 }
-
+\date{PDF4LHC}
 \AtBeginSection[]{
    \begin{frame}
    \vfill
@@ -57,7 +59,13 @@ Tanjona Rabemananjara
    \end{frame}
 }
 
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \begin{document}
+% for footer
+\title{NNPDF}
 \section{Theory Developments}
 \input{nuclear_uncs/nuclear_uncs}
 
@@ -71,6 +79,7 @@ Tanjona Rabemananjara
 \input{juan_future_hyperopt/future}
 
 \section{Dataset selection}
+\input{weight_fits/talk.tex}
 
 \section{PDF delivery}
 
