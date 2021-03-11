@@ -10,6 +10,7 @@
  - If making plots with validphys, consider using big labels: https://github.com/NNPDF/nnpdf/pull/1062
  - If you want local fontsize then check out example in closuretest:
  ```
+ % perhaps call your font command something different to avoid conflict.
  \newcommand\Fontvi{\fontsize{<fontsize>}{<line spacing>}\selectfont}
  \begin{frame}
  \Fontvi % only applies to this frame.
