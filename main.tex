@@ -1,0 +1,60 @@
+\documentclass{beamer}
+%%%%%%%%%%%%%%%%%%%
+% Now set the style TODO: change this!!
+%%%%%%%%%%%%%%%%%%%
+\usetheme{Madrid}
+\usecolortheme{dolphin}
+\setbeamertemplate{page number in head/foot}{}
+% Get rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+%%%%%%%%%%%%%%%%%
+% custom headline
+%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{%
+\leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=0.5\paperwidth,ht=2.5ex,dp=1.125ex]{palette tertiary}%
+    \hskip0pt plus1filll \insertsubsection \hspace{2pt}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.5\paperwidth,ht=2.5ex,dp=1.125ex]{palette secondary}%
+    \hskip 2pt \insertsection
+    \end{beamercolorbox}%
+  }
+}
+%%%%%%%%%%
+% Packages
+%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+
+
+%%%%%%%%%%
+% metadata
+%%%%%%%%%%
+\author[NNPDF]{
+Christopher Schwan and
+Rosalyn Pearson and
+Felix Hekhorn and
+Tommaso Giani and
+Juan Cruz-Martinez and
+Roy Stegeman and
+Michael Wilson and
+Zahari Kassabov and
+Tanjona Rabemananjara
+}
+
+\AtBeginSection[]{
+   \begin{frame}
+   \vfill
+   \centering
+   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+     \usebeamerfont{title}\insertsectionhead\par
+   \end{beamercolorbox}
+   \vfill
+   \end{frame}
+}
+
+\begin{document}
+\section{Validating the Methodology}
+\input{closure_test/closure_test}
+\end{document}
