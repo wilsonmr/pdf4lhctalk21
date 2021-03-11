@@ -5,4 +5,4 @@ default:
 #	pdflatex thcovmat
 
 clean:
-	rm -rf *~ *.out *.toc *.log talk.pdf *.aux *.blg
+	rm -rf *~ *.out *.toc *.log talk.pdf *.aux *.blg *.nav *.snm
