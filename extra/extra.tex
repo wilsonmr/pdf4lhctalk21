@@ -73,3 +73,29 @@ Comparing deuteron correction to MMHT \tiny{ \textcolor{green}{[Harland-Lang et 
     \includegraphics[width=90mm]{nuclear_uncs/corrfactor.png}
   \end{figure}
 \end{frame}
+
+\author[Zahari Kassabov]{}
+\institute{University of Cambridge}
+\begin{frame}{Choosing the weight}
+\protect\hypertarget{choosing-the-weight}{}
+\begin{itemize}
+\tightlist
+\item
+  Not a critical setting for this kind of study.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Typically we see PDFs bending and/or other datasets being poorly
+    fitted.
+  \end{itemize}
+\item
+  Rule of thumb: Have the dataset contributed roughly as much to the
+  total error function as all the of the data (assuming
+  \(\chi^2\)/ndat=1) \[
+  w = \text{total ndat}/\text{dataset ndat}
+  \] e.g.~DO e ASY has 11 points and we have 4524 in total, so we set a
+  weight of 411.
+
+\end{itemize}
+\end{frame}

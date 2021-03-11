@@ -29,6 +29,7 @@
 \usepackage{caption}
 \usepackage{amssymb}
 \usepackage{pifont}
+\usepackage{longtable,booktabs}
 
 \DeclareCaptionFormat{smol}{ \tiny {\color{blue}Fig#2} #3}
 
@@ -58,6 +59,10 @@ Tanjona Rabemananjara
    \end{frame}
 }
 
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \begin{document}
 % for footer
 \title{NNPDF}
@@ -74,6 +79,7 @@ Tanjona Rabemananjara
 \input{juan_future_hyperopt/future}
 
 \section{Dataset selection}
+\input{weight_fits/talk.tex}
 
 \section{PDF delivery}
 
