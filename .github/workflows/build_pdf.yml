@@ -24,7 +24,7 @@ jobs:
               root_file: talk.tex
 
           - name: Upload
-            if: github.ref == 'refs/heads/master'
+            if: github.ref == 'refs/heads/main'
             shell: bash -l {0}
             run: |
                 scp talk.pdf nnpdf@vp.nnpdf.science:~/WEB/validphys-reports/Cnw0iB46RCaAbsINyzFLwA==/talk.pdf
