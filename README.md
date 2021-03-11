@@ -1,6 +1,13 @@
 # NNPDF talk for PDF4LHC
 
+[latest compiled pdf](https://vp.nnpdf.science/Cnw0iB46RCaAbsINyzFLwA==/talk.pdf)
+
 ## Notes
+
+Consider making changes and compiling on branch before pushing to main.
+
+Upon push to main the document is compiled and uploaded [here](https://vp.nnpdf.science/Cnw0iB46RCaAbsINyzFLwA==/talk.pdf)
+
  - Before your section set author name for your slides with
  `\author[<your name>]{}`
  - Add a subsection for your slides for the headline
