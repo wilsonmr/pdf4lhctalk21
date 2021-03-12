@@ -1,6 +1,7 @@
 \subsection{EW corrections}
 
 \begin{frame}{EW corrections in PDF fits}
+\fontsize{9}{11}\selectfont
 \begin{equation*}
 \colorbox{Goldenrod}{$\frac{\mathrm{d} \sigma_{ab}}{\mathrm{d} \mathcal{O}} (x_1, x_2, Q^2, \mathcal{O})$} = \sum_{m,n} \alpha_\mathrm{s}^m (Q^2) \alpha^n \colorbox{SkyBlue}{$\frac{\mathrm{d} \sigma_{ab}^{(m,n)}}{\mathrm{d} \mathcal{O}} (x_1, x_2, Q^2, \mathcal{O})$}
 \end{equation*}
@@ -30,6 +31,7 @@ Unknown:
 \end{frame}
 
 \begin{frame}{Why include NLO EW corrections?}
+\fontsize{9}{11}\selectfont
 \begin{itemize}
 \item NNLO QCD+NLO EW more accurately than plain NNLO QCD
 \item Do we need NLO EW corrections in PDF fits/Is LO QED enough?
@@ -51,6 +53,7 @@ DY: large $M_{\ell \bar{\ell}}$, Z boson: large $p_\mathrm{T}$, \ldots
 \end{frame}
 
 \begin{frame}{Interpolation grids (I)}
+\fontsize{9}{11}\selectfont
 For PDF fitting we need \alert{PDF independent} predictions. Use Lagrange interpolation,
 \begin{equation*}
 f_a (x_1, Q^2) f_b (x_2, Q^2) \approx \sum_{i,j,k} f_a ( x_i, Q^2_k ) f_b ( x_j, Q^2_k ) L_i (x_1) L_j (x_2) L_k (Q^2) \text{,}
@@ -70,6 +73,7 @@ $\rightarrow$ generate \colorbox{LimeGreen}{$\frac{\mathrm{d} \Sigma_{abijkmn}}{
 \end{frame}
 
 \begin{frame}{Example: $\Sigma_{\mathrm{gg}ij021}/\Sigma_{\mathrm{gg}ij020}$, $\mathcal{O} (\alpha_\mathrm{s}^2 \alpha) / \mathcal{O} (\alpha_\mathrm{s}^2)$ for $\mathrm{g}\mathrm{g} \to \mathrm{t} \bar{\mathrm{t}}$ @ \SI{8}{\tera\electronvolt}}
+\fontsize{9}{11}\selectfont
 \begin{columns}[onlytextwidth]
 \begin{column}{0.6\textwidth}
 \includegraphics[height=0.73\textheight]{ew_corrections/figures/ttb-crop}
@@ -90,6 +94,7 @@ $\rightarrow$ generate \colorbox{LimeGreen}{$\frac{\mathrm{d} \Sigma_{abijkmn}}{
 \end{frame}
 
 \begin{frame}{Interpolation grids (II)}
+\fontsize{9}{11}\selectfont
 \begin{itemize}
 \item Interpolation grids are an old idea:
 \begin{itemize}
@@ -125,6 +130,7 @@ $\rightarrow$ generate \colorbox{LimeGreen}{$\frac{\mathrm{d} \Sigma_{abijkmn}}{
 \end{frame}
 
 \begin{frame}{\textrm{\textsc{PineAPPL}}}
+\fontsize{9}{11}\selectfont
 \begin{columns}[T,onlytextwidth]
 \begin{column}{.5\textwidth}
 \begin{itemize}
@@ -149,6 +155,7 @@ $\rightarrow$ generate \colorbox{LimeGreen}{$\frac{\mathrm{d} \Sigma_{abijkmn}}{
 \end{frame}
 
 \begin{frame}{Process list for NNPDF4.0}
+\fontsize{9}{11}\selectfont
 Calculate theoretical predictions for the entire NNPDF4.0 dataset:
 \begin{enumerate}
 \item DIS: NMC, SLAC, BCDMS, CHORUS, NUTEV, HERA
@@ -178,6 +185,7 @@ see \beamercite{M.\ Cacciari, S.\ Forte, D.\ Napoletano, G.\ Soyez, G.\ Stagnitt
 \end{frame}
 
 \begin{frame}{Drell--Yan: NNPDF4.0 dataset}
+\fontsize{9}{11}\selectfont
 \begin{columns}[T,onlytextwidth]
 \begin{column}{.5\textwidth}
 
@@ -235,6 +243,7 @@ $y_{\ell \bar{\ell}} \approx \frac{1}{2} ln \frac{x_1}{x_2}$ and $M_{\ell \bar{\
 \end{frame}
 
 \begin{frame}{Double-counting problem: subtraction of final-state radiation (FSR)}
+\fontsize{9}{11}\selectfont
 \begin{center}
 \includegraphics[height=0.2\textheight]{ew_corrections/figures/fd05_photon_radiation}
 \end{center}
@@ -261,6 +270,7 @@ can be large, \alert{up to \SI{20}{\percent}} in invariant mass distributions
 \end{frame}
 
 \begin{frame}{Subtraction of photon--photon contribution}
+\fontsize{9}{11}\selectfont
 \begin{center}
 \includegraphics[height=0.2\textheight]{ew_corrections/figures/fd02_born_photon_t_channel}
 \includegraphics[height=0.2\textheight]{ew_corrections/figures/fd03_born_photon_u_channel}
@@ -279,6 +289,7 @@ The photon-induced process, $\gamma\gamma \to \ell \bar{\ell}$, is simulated at 
 \end{frame}
 
 \begin{frame}[t]{Z transverse momentum}
+\fontsize{9}{11}\selectfont
 \begin{columns}[T,onlytextwidth]
 \begin{column}{.5\textwidth}
 \hspace*{1.5cm}
@@ -317,6 +328,7 @@ dynamic scale:
 \end{frame}
 
 \begin{frame}{Single-top production}
+\fontsize{9}{11}\selectfont
 Not properly definable (!?) at NLO EW:
 \begin{itemize}
 \item Analyses, e.g.\ \beamercite{ATLAS collaboration}{https://inspirehep.net/literature/1303905}, treat $s$-channels as background
@@ -336,6 +348,7 @@ Not properly definable (!?) at NLO EW:
 \end{frame}
 
 \begin{frame}{\href{https://arxiv.org/abs/1412.1115}{CMS DY 2D} (I)}
+\fontsize{9}{11}\selectfont
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \includegraphics[width=0.95\textwidth]{ew_corrections/figures/pineappl_CMSDY2D11_bin1}
@@ -347,6 +360,7 @@ Not properly definable (!?) at NLO EW:
 \end{frame}
 
 \begin{frame}{\href{https://arxiv.org/abs/1412.1115}{CMS DY 2D} (II)}
+\fontsize{9}{11}\selectfont
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \includegraphics[width=0.95\textwidth]{ew_corrections/figures/pineappl_CMSDY2D11_bin3}
@@ -358,6 +372,7 @@ Not properly definable (!?) at NLO EW:
 \end{frame}
 
 \begin{frame}{\href{https://arxiv.org/abs/1412.1115}{CMS DY 2D} (III)}
+\fontsize{9}{11}\selectfont
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \includegraphics[width=0.95\textwidth]{ew_corrections/figures/pineappl_CMSDY2D11_bin5}
