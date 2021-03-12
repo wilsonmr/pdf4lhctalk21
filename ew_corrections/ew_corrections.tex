@@ -1,7 +1,6 @@
 \title{NNPDF}
 \author[Christopher Schwan]{}
 \institute{Universit\`a di Milano}
-\date{PDF4LHC}
 
 \subsection{NLO EW corrections for PDF fits}
 
@@ -10,7 +9,7 @@
 \begin{columns}[onlytextwidth]
 \begin{column}{0.45\textwidth}
 
-\begin{block}{What do we need?}
+\begin{block}{Ingredients?}
 \begin{itemize}
 \item[\ding{51}] At least QED corrections in DGLAP
 \item[\ding{55}] NLO EW (including NLO QCD+EW) corrections for all PDF processes
@@ -23,14 +22,15 @@
 \begin{itemize}
 \item In principle: always add EW corrections when we have them, more precision
 \item In practice: cuts can be relaxed: DY large-mass region, \ldots
-\item Requested at PDF4LHC for a long time
+\item Users demand it!
 \end{itemize}
 \end{block}
 \end{column}
 \begin{column}{0.45\textwidth}
 \begin{block}{Problems to be solved}
 \begin{itemize}
-\item[\ding{51}] Need corrections in the form of \alert{interpolation grids}: PineAPPL, interfacing with Madgraph5\_aMC@NLO (see \href{https://arxiv.org/abs/2008.12789}{arXiv:2008.12789})
+\item[\ding{51}] Need corrections in the form of \alert{interpolation grids}: PineAPPL, interfacing with Madgraph5\_aMC@NLO, see\\
+\beamercite{S.\ Carrazza, E.R.\ Nocera, C.\ Schwan, M.\ Zaro}{https://inspirehep.net/literature/1814432}
 \item[\ding{51}] Careful selection of data: no subtraction of FSR, no photon-initiated subtraction, proper observable definition
 \item[\ding{55}] Produce all predictions and implement all (changed) data (WIP)
 \item[$\rightarrow$] Run fit
