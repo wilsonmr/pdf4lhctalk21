@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[xcolor={usenames,svgnames}]{beamer}
 %%%%%%%%%%%%%%%%%%%
 % Now set the style TODO: change this!!
 %%%%%%%%%%%%%%%%%%%
@@ -25,12 +25,19 @@
 % Packages
 %%%%%%%%%%
 \usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{booktabs}
 \usepackage{booktabs}
 \usepackage{caption}
-\usepackage{amssymb}
+\usepackage{csquotes}
+\usepackage{longtable}
 \usepackage{pifont}
+\usepackage{siunitx}
+\usepackage{subcaption}
 \usepackage{tcolorbox}
-\usepackage{longtable,booktabs}
+
+% define beamer citation command
+\newcommand{\beamercite}[2]{\href{#2}{{\color{ForestGreen}\fontsize{6}{7}\selectfont{[#1]}}}}
 
 \DeclareCaptionFormat{smol}{ \tiny {\color{blue}Fig#2} #3}
 
@@ -68,6 +75,7 @@ Tanjona Rabemananjara
 % for footer
 \title{NNPDF}
 \section{Theory Developments}
+\input{ew_corrections/ew_corrections}
 \input{nuclear_uncs/nuclear_uncs}
 
 \section{PDF properties and their implementation}
@@ -86,7 +94,10 @@ Tanjona Rabemananjara
 \section{PDF delivery}
 \input{gan_compressor/talk.tex}
 
+\appendix
+
 \section{Additional slides}
+\input{ew_corrections/ew_corrections_backup}
 \input{extra/extra}
 
 \end{document}
