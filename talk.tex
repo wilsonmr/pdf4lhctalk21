@@ -35,16 +35,18 @@
 \usepackage{siunitx}
 \usepackage{subcaption}
 \usepackage{tcolorbox}
+\usepackage{tabularx}
 
 % define beamer citation command
 \newcommand{\beamercite}[2]{\href{#2}{{\color{ForestGreen}\fontsize{6}{7}\selectfont{[#1]}}}}
+
 
 \DeclareCaptionFormat{smol}{ \tiny {\color{blue}Fig#2} #3}
 
 %%%%%%%%%%
 % metadata
 %%%%%%%%%%
-\author[NNPDF]{
+\author[NNPDF \& N3PDF]{
 Christopher Schwan and
 Rosalyn Pearson and
 Felix Hekhorn and
@@ -73,12 +75,13 @@ Tanjona Rabemananjara
 
 \begin{document}
 % for footer
-\title{NNPDF}
+\title{NNPDF \& N3PDF}
 \section{Theory Developments}
 \input{ew_corrections/ew_corrections}
 \input{nuclear_uncs/nuclear_uncs}
 
 \section{PDF properties and their implementation}
+\input{felix_positivity/positivity}
 
 \section{The new NNPDF4.0 methodology: \texttt{n3fit}}
 \input{juan_future_hyperopt/hyperopt}
@@ -99,5 +102,6 @@ Tanjona Rabemananjara
 \section{Additional slides}
 \input{ew_corrections/ew_corrections_backup}
 \input{extra/extra}
+\input{felix_positivity/positivity-backup}
 
 \end{document}
