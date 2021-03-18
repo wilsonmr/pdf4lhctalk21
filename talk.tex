@@ -40,7 +40,7 @@
 
 % define beamer citation command
 \newcommand{\beamercite}[2]{\href{#2}{{\color{ForestGreen}\fontsize{6}{7}\selectfont{[#1]}}}}
-
+\newcommand{\genericauthor}{NNPDF \& N3PDF}
 
 \DeclareCaptionFormat{smol}{ \tiny {\color{blue}Fig#2} #3}
 
@@ -58,8 +58,13 @@ Michael Wilson and
 Zahari Kassabov and
 Tanjona Rabemananjara
 }
+% for footer
+\title{NNPDF}
 \date{PDF4LHC}
+
 \AtBeginSection[]{
+  \author[\genericauthor]{} % revert to generic author between section
+  \institute{} % and revert institute
    \begin{frame}
    \vfill
    \centering
@@ -75,36 +80,39 @@ Tanjona Rabemananjara
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \begin{document}
-% for footer
-\title{NNPDF \& N3PDF}
 \section{Theory Developments}
 \input{ew_corrections/ew_corrections}
 \input{nuclear_uncs/nuclear_uncs}
 
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{PDF properties and their implementation}
 \input{felix_positivity/positivity}
 \input{pos_integ/main}
 
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{The new NNPDF4.0 methodology}
 \input{juan_future_hyperopt/hyperopt}
 \input{roy_pdf_correlations/pdf_corr}
 
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{Validating the Methodology}
 \input{closure_test/closure_test}
 \input{juan_future_hyperopt/future}
 
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dataset selection}
-\input{weight_fits/talk.tex}
+\input{weight_fits/talk}
 
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{PDF delivery}
 \input{gan_compressor/talk}
 
-\appendix
-
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{Additional slides}
 \input{ew_corrections/ew_corrections_backup}
-\input{extra/extra}
+\input{nuclear_uncs/backup}
 \input{felix_positivity/positivity-backup}
+\input{closure_test/backup.tex}
+\input{weight_fits/backup}
 \input{gan_compressor/backup}
-
 \end{document}
