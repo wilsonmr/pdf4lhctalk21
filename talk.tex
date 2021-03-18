@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%
 \usetheme{Madrid}
 \usecolortheme{dolphin}
-\setbeamertemplate{page number in head/foot}{}
+% \setbeamertemplate{page number in head/foot}{}
 % Get rid of navigation symbols
 \setbeamertemplate{navigation symbols}{}
 %%%%%%%%%%%%%%%%%
@@ -65,14 +65,15 @@ Tanjona Rabemananjara
 \AtBeginSection[]{
   \author[\genericauthor]{} % revert to generic author between section
   \institute{} % and revert institute
-   \begin{frame}
-   \vfill
-   \centering
-   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
-     \usebeamerfont{title}\insertsectionhead\par
-   \end{beamercolorbox}
-   \vfill
-   \end{frame}
+  % remove custom buffer frame - use SF's
+  %  \begin{frame}
+  %  \vfill
+  %  \centering
+  %  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+  %    \usebeamerfont{title}\insertsectionhead\par
+  %  \end{beamercolorbox}
+  %  \vfill
+  %  \end{frame}
 }
 
 
