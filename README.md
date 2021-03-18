@@ -4,19 +4,17 @@
 
 ## Notes
 
-Consider making changes and compiling on branch before pushing to main.
+**Please** make changes and check document compiles on branch before pushing to main. There is technically a finite amount of CI time!
 
 Upon push to main the document is compiled and uploaded [here](https://vp.nnpdf.science/Cnw0iB46RCaAbsINyzFLwA==/talk.pdf)
 
- - Before your section set author name for your slides with
- ```
- \author[<your name>]{}
- \institute{<your institute>}
- ```
- - Add a subsection for your slides for the headline
- - Can also change institution before your slide
- - Current "style" is very much a hacked together thing to look like JCM's slides
- in particular setting date as PDF4LHC so it appears in footer
+- Before your section set author name, institute and subsection for your slides with
+```
+\author[<your name>]{}
+\institute{<your institute>}
+\subsection{<your subsection>}
+```
+but note that the subsection should generally agree with the contents slide in `intro`
  - If making plots with validphys, consider using big labels: https://github.com/NNPDF/nnpdf/pull/1062
  - If you want local fontsize then check out example in closuretest:
  ```
