@@ -27,4 +27,4 @@ jobs:
             if: github.ref == 'refs/heads/main'
             shell: bash -l {0}
             run: |
-                scp talk.pdf nnpdf@vp.nnpdf.science:~/WEB/validphys-reports/Cnw0iB46RCaAbsINyzFLwA==/talk.pdf
+                scp talk.pdf nnpdf@vp.nnpdf.science:~/WEB/validphys-reports/Cnw0iB46RCaAbsINyzFLwA==/no_intro_talk.pdf
