@@ -1,10 +1,52 @@
 \definecolor{darkgreen}{rgb}{0.0, 0.5, 0.13}
+\definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
 \newcommand{\gct}{\color{darkgreen}\checkmark}
 \newcommand{\rma}{\color{red}\ding{55}}
 \newcommand{\bct}{\color{blue}\checkmark}
 
+\newcommand{\arrowdownunder}{\begin{center}$\big\downarrow$\end{center}\vspace{-0.3cm}}
+\newcommand{\mycolutitle}[1]{\vspace{-0.7cm}\begin{center}#1\end{center}\vspace{-0.1cm}}
+
 \author[Juan Cruz-Martinez]{}
 \institute{University of Milan}
+
+\subsection{A new generation}
+\begin{frame}[t]
+    \frametitle{Key differences with respect to the 3.1 methodology}
+    \footnotesize
+    \begin{columns}[t]
+        \column{0.5\linewidth}
+            \mycolutitle{NNPDF 3.1 code}
+            \begin{list}{\color{darkred} $\rightarrow$}{}  
+                \item {\bf Genetic Algorithm optimizer}
+                \item One network per flavour
+                \item Physical constraints imposed independently of optimization
+                \item Preprocessing fixed per each of the replicas
+                \item C++ monolithic codebase
+                \item In-house Machine Learning optimization framework
+                \item Fitting times of up to various days
+            \end{list}
+            \arrowdownunder
+            \begin{itemize}
+                \item[]{\bf Fit parameters manually chosen \\ (manual optimization of hyperparameters)}
+            \end{itemize}
+        \column{0.5\linewidth}
+            \mycolutitle{NNPDF 4.0 code}
+            \begin{list}{\color{darkgreen} $\rightarrow$}{}  
+                \item {\bf Gradient Descent optimization}
+                \item One network for all flavours
+                \item Physical constraints integrated in the optimization
+                \item Preprocessing can be fitted within replicas
+                \item Python object oriented codebase
+                \item Freedom to use external libraries (default: TensorFlow)
+                \item Results available in less than an hour
+            \end{list}
+            \arrowdownunder
+            \begin{itemize}
+                \item[]{\bf Fit parameters chosen automatically (hyperparameter scan)}
+            \end{itemize}
+    \end{columns}
+\end{frame}
 
 \subsection{Hyperoptimization and K-folding}
 
