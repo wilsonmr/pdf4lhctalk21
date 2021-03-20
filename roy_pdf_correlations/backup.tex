@@ -8,3 +8,22 @@ $$corr_{i,j}(x)= \frac{\sum_{n=1}^{N_{rep}} (f_{i,n}(x) -  f_{i,0}(x) )(f_{j,n}(
 where $f_{i,n}(x)$ is a PDF replica, and $n=0$ corresponds to the central value of the PDF set. 
 
 \end{frame}
+
+\begin{frame}[t]{Correlated combination of PDFs}
+
+When combining PDF sets $f_i$ in a correlated way, for each momentum fraction $x$ and flavour, the central value is calculated using
+$$
+\left\langle f\right\rangle_{comb}=\sum_{i=1}^{N_{sets}} w_{i} f_{i,0}
+$$
+
+and the variance using
+$$
+V_{comb}=\sum_{i, j=1}^{N_{sets}} w_{i} \sigma_{i j} w_{j}
+$$
+
+where $\sigma$ is the covariance matrix, $f_{0,i}$ is the central value of PDF set $i$, and $w_i$ are the weights 
+$$
+w_{i}=\frac{\sum_{j=1}^{N_{sets}}\left(\sigma^{-1}\right)_{i j}}{\sum_{k, l=1}^{N_{sets}}\left(\sigma^{-1}\right)_{k l}}
+$$
+
+\end{frame}
