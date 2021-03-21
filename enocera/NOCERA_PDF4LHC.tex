@@ -118,7 +118,7 @@ The Structure of the Proton to One-Percent Accuracy
 \begin{document}
 \beamertemplatenavigationsymbolsempty
 
-%TITLEPAGE-------------------------------------------------------------------------------------------------------
+%TITLEPAGE-----------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
 \titlepage
 \vspace{0.7cm}
@@ -128,7 +128,7 @@ The Structure of the Proton to One-Percent Accuracy
 \vspace{-0.7cm}
 \end{frame}
 
-%Slide01
+%Slide01-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{From NNPDF3.1 to NNPDF4.0}
  \footnotesize
@@ -174,7 +174,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{tabularx}
 \end{frame}
 
-%Slide02
+%Slide02-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{From NNPDF3.1 to NNPDF4.0}
  \footnotesize
@@ -315,7 +315,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{block}
 \end{frame}
 
-%Slide03
+%Slide03-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{NNPDF4.0: data set extension}
  \footnotesize
@@ -324,7 +324,7 @@ The Structure of the Proton to One-Percent Accuracy
  $\mathcal{O}(50)$ data sets investigated; $\mathcal{O}(400)$ data points more in NNPDF4.0 than in NNPDF3.1
 \end{frame}
 
-%Slide04
+%Slide04-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{New data sets in NNPDF4.0}
  \tiny
@@ -369,9 +369,9 @@ The Structure of the Proton to One-Percent Accuracy
  \alert{DIS+jets}   
             & H1$^*$      & Single- and di-jet differential distributions                         & [{\textcolor{salmon}{EPJ\,C75\,(2015)\,65; C77\,(2017)\,215}}]\\
  \bottomrule 
- \multicolumn{3}{l}{$^*$Under consideration via reweighting.} &
- \multicolumn{1}{l}{$^\dag$Only NLO fit.}\\
- \multicolumn{4}{l}{Processes highlighted in \alert{red} correspond to processes NOT in NNPDF3.1.}\\
+ \multicolumn{3}{l}{$^*$Not in baseline fit; studied via reweighting} &
+ \multicolumn{1}{l}{$^\dag$Only NLO fit}\\
+ \multicolumn{4}{l}{Processes highlighted in \alert{red} correspond to processes NOT in NNPDF3.1}\\
  \end{tabularx}
  \vspace{-0.2cm}
  \scriptsize
@@ -382,7 +382,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{block}
 \end{frame}
 
-%Slide05
+%Slide05-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{NNPDF4.0: theoretical and methodological features}
  \footnotesize
@@ -402,6 +402,7 @@ The Structure of the Proton to One-Percent Accuracy
   {\scriptsize $\rightarrow$ extended integrability constraints of non-singlet light quark PDF combinations}\\
   \item \underline{New} PDF parametrisation and optimisation \\
   {\scriptsize $\rightarrow$ single neural network to parametrise eight independent PDF combinations}\\
+  {\scriptsize $\rightarrow$ check of the independence of the results from the chosen parametrisation basis}\\
   {\scriptsize $\rightarrow$ new optimisation strategy based on gradient descent rather than genetic algorithms}\\
   {\scriptsize $\rightarrow$ scan of the hyperparameter space to find the optimal minimisation settings}\\
   \item \underline{Complete} statistical validation of PDF uncertainties\\
@@ -411,15 +412,15 @@ The Structure of the Proton to One-Percent Accuracy
  \end{itemize}
 \end{frame}
 
-%Slide06
+%Slide06-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
- \frametitle{NNPDF4.0: Fit quality}
+ \frametitle{NNPDF4.0: Fit quality -- NNLO}
  \footnotesize
  \centering
  \begin{columns}[c]
   \begin{column}{0.5\textwidth}
   \tiny
-  \renewcommand*{\arraystretch}{1.1}
+  \renewcommand*{\arraystretch}{1.08}
    \begin{tabularx}{\columnwidth}{Xrc}
    \toprule
    Data set                   & $N_{\rm dat}$ & $\chi^2/N_{\rm dat}$ \\
@@ -458,30 +459,35 @@ The Structure of the Proton to One-Percent Accuracy
    \centering
    \footnotesize
    Overall good description of the data sets\\
-   \vspace{0.2cm}
+   \vspace{0.1cm}
    Two exceptions:\\
    HERA $\sigma_c$ and ATLAS top pair\\
-   \vspace{0.2cm}
+   \vspace{0.1cm}
    Weighted fits analysis:\\
    {\scriptsize in case of HERA $\sigma_c$:}\\
    {\scriptsize lack of small-$x$ resummation}\\
-   \vspace{0.2cm}
+   \vspace{0.1cm}
    {\scriptsize in case of ATLAS top pair:\\ slight tension with (di-jet) data sets}\\
    {\scriptsize poor fit if all distributions are included}\\
    {\scriptsize normalised rapidity distributions retained}\\
    {\scriptsize although their $\chi^2/N_{\rm dat}$ of order 3}\\
    {\scriptsize CMS top pair data almost insensitive to all this}\\
-   \vspace{0.2cm}
+   \vspace{0.1cm}
    General remark:\\
    {\scriptsize as statistical uncertainties become smaller}\\
    {\scriptsize a good control of systematic uncertainties}\\ 
    {\scriptsize and their correlations becomes fundamental}\\ 
    {\scriptsize to interpret the sensibleness of the fit}\\
+   \vspace{0.2cm}
+   \begin{block}{}
+    \centering
+    {\scriptsize All results in the sequel are obtained at NNLO}\\
+   \end{block}
   \end{column}
  \end{columns}
 \end{frame}
 
-%Slide07
+%Slide07-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{From NNPDF3.1 to NNPDF4.0}
  \footnotesize
@@ -584,7 +590,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{columns}
 \end{frame}
 
-%Slide08
+%Slide08-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{The gluon PDF: impact of data}
  \footnotesize
@@ -623,14 +629,14 @@ The Structure of the Proton to One-Percent Accuracy
  \end{tabularx}
 \end{frame}
 
-%Slide09
+%Slide09-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{The gluon PDF: single-inclusive jet vs di-jet data}
  \footnotesize
  \centering
  Inclusion of di-jet measurements is preferred over single-inclusive jet measurements\\
  given their greater theoretical accuracy and the avoidance of decorrelation models\\
- {\scriptsize based on an extensive study in the framework of the NNPDF3.1 methodology~{\tiny{[{\color{salmon}{EPJ C80 (2020) 8}}]}}}\\
+ {\scriptsize based on an extensive study in the framework of the NNPDF3.1 methodology~{\tiny{[{\color{salmon}{EPJ\,C80\,(2020)\,8}}]}}}\\
  \vspace{0.2cm}
  \begin{columns}[c]
   \begin{column}{0.5\textwidth}
@@ -661,7 +667,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{tabularx}
 \end{frame}
 
-%Slide10
+%Slide10-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{Quark flavour decomposition: impact of data}
  \footnotesize
@@ -708,7 +714,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{tabularx} 
 \end{frame}
 
-%Slide11
+%Slide11-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{Quark flavour separation: nuclear uncertainties}
  \footnotesize
@@ -742,7 +748,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{columns}
 \end{frame}
 
-%Slide12
+%Slide12-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{The strange PDF: impact of data}
  \footnotesize
@@ -770,7 +776,7 @@ The Structure of the Proton to One-Percent Accuracy
    \vspace{0.2cm}
    Good consistency with NNPDF3.1str\\
    {\scriptsize no nuclear uncertainties in NNPDF3.1str}\\
-   {\scriptsize no NOMAD data in NNPDF4.0}\\
+   {\scriptsize no NOMAD nor $W+c$ data in NNPDF4.0}\\
    \vspace{0.2cm}
    Good consistency of $K_s$ across PDF sets\\ 
    \vspace{0.1cm}
@@ -782,7 +788,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{columns} 
 \end{frame}
 
-%Slide13
+%Slide13-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{Impact of theory: perturbative vs fitted charm}
  \footnotesize
@@ -816,7 +822,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{columns}
 \end{frame}
 
-%Slide14
+%Slide14-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{NNPDF4.0: parton luminosities}
  \footnotesize
@@ -839,7 +845,7 @@ The Structure of the Proton to One-Percent Accuracy
  \end{overlayarea}
 \end{frame}
 
-%Slide15
+%Slide15-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{NNPDF4.0: implications for LHC phenomenology}
  \footnotesize
@@ -853,28 +859,28 @@ The Structure of the Proton to One-Percent Accuracy
  \end{flushright}
 \end{frame}
 
-%Slide16
+%Slide16-------------------------------------------------------------------------------------------------------------------------------------------
 \begin{frame}
  \frametitle{Conclusions}
  \footnotesize
  \centering
- NNPDF4.0 is the next generation parton set of the NNPDF family\\
+ NNPDF4.0 is the next generation parton set of the NNPDF family.\\
  \vspace{0.3cm}
  It achieves 1\% accuracy in an unprecedentedly broad kinematic range\\
- by consistently improving the previous NNPDF3.1 parton set\\
+ by consistently improving the previous NNPDF3.1 parton set.\\
  \vspace{0.3cm}
  This result builds upon an extensive LHC data set\\ 
- combined with deep-learning optimisation models\\
+ combined with deep-learning optimisation models.\\
  \vspace{0.3cm}
- Its faithfulness in representing PDF uncertainties is completely validated by closure tests\\
+ Its faithfulness in representing PDF uncertainties is completely validated by closure tests.\\
  \vspace{0.3cm}
  1\% PDF uncertainties challenge the accuracy of theoretical predictions\\
- and demand an increasing effort towards the systematic inclusion of\\ 
- theoretical uncertainties (nuclear, high-order, physical parameters, \dots)\\
- and higher-order QCD and EW corrections\\
+ and demand an increasing effort towards the systematic inclusion in the fit of\\ 
+ theoretical uncertainties (nuclear, higher orders, physical parameters, \dots)\\
+ and higher-order QCD and EW corrections.\\
  \vspace{0.3cm}
- The NNPDF code used to produce the NNPDF4.0 parton set\\ 
- will be made publicly available with its documentation\\
+ The {\bf NNPDF code} used to produce the NNPDF4.0 parton set\\ 
+ {\bf will be made publicly available} with its documentation.\\
  \vspace{1cm}
  \begin{overlayarea}{\textwidth}{0.5cm}
   \only<1>
