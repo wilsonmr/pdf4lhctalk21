@@ -1,0 +1,19 @@
+pdfs:
+    - {id: 210219-01-rs-nnpdf40-baseline, label: "NNPDF4.0"}
+#    - {id: 210219-n3fit-FD04, label: "NNPDF4.0 (no LHC)"}
+#    - {id: 210222-n3fit-FD02, label: "NNPDF4.0 (collider only)"}
+#    - {id: 210222-n3fit-FD08, label: "NNPDF4.0 (no single top)"}
+    - {id: 210222-n3fit-FD09, label: "NNPDF4.0 (no LHCb)"}
+    - {id: 210222-n3fit-FD12, label: "NNPDF4.0 (no ATLAS/CMS W,Z)"}
+   
+first:
+    Q: 1.7
+    flavours: [u,ubar,d,dbar]
+    ymin: 0.8
+    ymax: 1.2
+    xmin: 0.0001
+    xmax: 0.7
+    scale: log
+
+actions_:
+    - first plot_pdfs(normalize_to=1)

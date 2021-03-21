@@ -1,0 +1,17 @@
+pdfs:
+#    - {id: 210219-01-rs-nnpdf40-baseline, label: "NNPDF4.0"}
+    - {id: 210127-nnfit-001, label: "NNPDF3.1"}
+#    - {id: 210226-n3fit-FD01, label: "NNPDF4.0 meth.; NNPDF3.1 data set"}
+    - {id: 210127-nnfit-meth-001, label: "NNPDF31. meth.; NNPDF4.0 data set"}
+   
+first:
+    Q: 1.7
+    flavours: [d]
+    ymin: -0.1
+    ymax: 0.6
+    xmin: 0.0001
+    xmax: 1.0
+    scale: log
+
+actions_:
+    - first plot_pdfs

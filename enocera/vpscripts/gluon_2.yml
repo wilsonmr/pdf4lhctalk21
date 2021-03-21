@@ -1,0 +1,19 @@
+pdfs:
+    - {id: 210219-01-rs-nnpdf40-baseline, label: "NNPDF4.0"}
+#    - {id: 210314-n3fit-FD18, label: "NNPDF4.0 (single-inclusive jets instead of di-jets)"}
+#    - {id: 210222-n3fit-FD05, label: "NNPDF4.0 (no jets)"}
+#    - {id: 210222-n3fit-FD07, label: "NNPDF4.0 (no top)"}
+    - {id: 210222-n3fit-FD10, label: "NNPDF4.0 (no ZpT)"}
+    - {id: 210222-n3fit-FD11, label: "NNPDF4.0 (no direct photon)"}
+   
+first:
+    Q: 1.7
+    flavours: [g]
+    ymin: 0.5
+    ymax: 1.5
+    xmin: 0.0001
+    xmax: 0.7
+    scale: log
+
+actions_:
+    - first plot_pdfs(normalize_to=1)

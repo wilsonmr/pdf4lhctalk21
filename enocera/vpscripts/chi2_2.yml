@@ -1,0 +1,42 @@
+meta:
+    author: Emanuele R. Nocera
+    title: Benchmark predictions for PDF4LHC ATLAS top pair data
+    keywords: [pdf4lhc]
+    
+theoryid: 200
+
+use_cuts: internal
+
+pdf: 210314-n3fit-FD18
+
+metadata_group: custom_group
+
+dataset_inputs:
+- {dataset: ATLASZPT8TEVMDIST, frac: 0.75, cfac: [QCD], sys: 10, custom_group: ZPT}
+- {dataset: ATLASZPT8TEVYDIST, frac: 0.75, cfac: [QCD], sys: 10, custom_group: ZPT}
+- {dataset: ATLASTTBARTOT, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: ATLAS_TTB_DIFF_8TEV_LJ_TRAPNORM, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: ATLAS_TTB_DIFF_8TEV_LJ_TTRAPNORM, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: ATLAS_TOPDIFF_DILEPT_8TEV_TTRAPNORM, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: ATLAS1JET11_NEW_SCALE, frac: 0.75, cfac: [QCD], sys: DECORR, custom_group: ATLAS1JET }
+- {dataset: ATLAS_1JET_8TEV_R06_DEC, frac: 0.75, cfac: [QCD], custom_group: ATLAS1JET}
+- {dataset: ATLAS_2JET_7TEV_R06, frac: 0.75, cfac: [QCD], custom_group: ATLAS2JET}
+- {dataset: CMSZDIFF12, frac: 1.0, cfac: [QCD, NRM], sys: 10, custom_group: ZPT}
+- {dataset: CMSJETS11_NEW_SCALE, frac: 0.75, cfac: [QCD], custom_group: CMS1JET}                          
+- {dataset: CMS_1JET_8TEV, frac: 0.75, cfac: [QCD], custom_group: CMS1JET}
+- {dataset: CMS_2JET_7TEV, frac: 0.75, cfac: [QCD], custom_group: CMS2JET}
+- {dataset: CMS_2JET_3D_8TEV, frac: 0.75, cfac: [QCD], custom_group: CMS2JET}
+- {dataset: CMSTTBARTOT, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: CMSTOPDIFF8TEVTTRAPNORM, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: CMSTTBARTOT5TEV, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: CMS_TTBAR_2D_DIFF_MTT_TRAP_NORM, frac: 1.0, cfac: [QCD], custom_group: TOP}
+- {dataset: CMS_TTB_DIFF_13TEV_2016_2L_TRAP, frac: 1.0, cfac: [QCD], custom_group: TOP}      
+- {dataset: CMS_TTB_DIFF_13TEV_2016_LJ_TRAP, frac: 1.0, cfac: [QCD], custom_group: TOP}
+
+template_text: |
+
+    ## Chi2
+    {@ groups_chi2_table @}
+
+actions_:
+    - report(main=True)

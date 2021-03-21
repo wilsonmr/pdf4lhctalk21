@@ -1,0 +1,17 @@
+pdfs:
+    - {id: 210219-01-rs-nnpdf40-baseline, label: "NNPDF4.0"}
+    - {id: 210222-n3fit-theory-005, label: "NNPDF4.0 (pert.charm)"}
+    - {id: 210222-n3fit-FD14, label: "NNPDF40 (w/ EMC)"}
+    - {id: NNPDF31_nnlo_as_0118, label: "NNPDF3.1"}
+   
+first:
+    Q: 1.7
+    flavours: [c]
+    ymin: -0.02
+    ymax: +0.03
+    xmin: 0.0001
+    xmax: 1.0
+    scale: log
+
+actions_:
+    - first plot_pdfs

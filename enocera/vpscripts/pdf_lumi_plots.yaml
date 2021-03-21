@@ -1,0 +1,30 @@
+meta:
+  title: Luminosity plot example
+  author: Rosalyn Pearson
+  keywords: [example]
+
+pdfs:
+  - {id: "210219-02-rs-nnpdf40-1000", label: "NNPDF4.0"}
+  - {id: "NNPDF31_nnlo_as_0118", label: "NNPDF3.1"}
+  - {id: "210222-n3fit-FD02", label: "NNPDF4.0 (collider only)"}
+
+sqrts: 14000 # GeV
+
+lumi_channel: "qq" # one of [gg, gq, qqbar, qq, ddbar, uubar, ssbar,
+                   #         ccbar, bbbar, dubar, udbar, scbar, csbar, pp, gp]
+
+PDFscalespecs:
+  - xscale: log
+    xscaletitle: Log
+    ymin: 0.8
+    ymax: 1.2
+
+template_text: |
+  {@with PDFscalespecs@}
+  {@xscaletitle@} scale
+  =====================
+  {@plot_lumi1d(normalize_to=1)@}
+  {@endwith@}
+
+actions_:
+  - report(main=True)

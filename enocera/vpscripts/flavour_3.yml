@@ -1,0 +1,16 @@
+pdfs:
+    - {id: 210219-01-rs-nnpdf40-baseline, label: "NNPDF4.0"}
+    - {id: 210222-n3fit-meth-010, label: "NNPDF4.0 (no nucl. uncs.)"}
+    - {id: 210222-n3fit-meth-008, label: "NNPDF4.0 (no deut. uncs.)"}
+   
+first:
+    Q: 1.7
+    flavours: [u,ubar,d,dbar]
+    ymin: 0.8
+    ymax: 1.2
+    xmin: 0.0001
+    xmax: 1
+    scale: log
+
+actions_:
+    - first plot_pdfs(normalize_to=1)

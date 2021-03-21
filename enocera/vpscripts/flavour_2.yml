@@ -1,0 +1,15 @@
+pdfs:
+    - {id: 210219-01-rs-nnpdf40-baseline, label: "NNPDF4.0"}
+    - {id: 210222-n3fit-theory-005, label: "NNPDF4.0 (pert. charm)"}
+   
+first:
+    Q: 1.7
+    flavours: [u,ubar,d,dbar]
+    ymin: 0.8
+    ymax: 1.2
+    xmin: 0.0001
+    xmax: 0.7
+    scale: log
+
+actions_:
+    - first plot_pdfs(normalize_to=1)

@@ -1,0 +1,94 @@
+meta:
+    author: Emanuele R. Nocera
+    title: Benchmark predictions for PDF4LHC ATLAS top pair data
+    keywords: [pdf4lhc]
+    
+theoryid: 200
+
+use_cuts: internal
+
+pdf: 210222-n3fit-FD11
+
+metadata_group: custom_group
+
+dataset_inputs:
+- {dataset: NMCPD_dw, frac: 0.75, custom_group: FTDIS}
+- {dataset: NMC, frac: 0.75, custom_group: FTDIS}
+- {dataset: SLACP_dwsh, frac: 0.75, custom_group: FTDIS}
+- {dataset: SLACD_dw, frac: 0.75, custom_group: FTDIS}
+- {dataset: BCDMSP_dwsh, frac: 0.75, custom_group: FTDIS}
+- {dataset: BCDMSD_dw, frac: 0.75, custom_group: FTDIS}
+- {dataset: CHORUSNUPb_dw, frac: 0.75, custom_group: FTDIS}
+- {dataset: CHORUSNBPb_dw, frac: 0.75, custom_group: FTDIS}
+- {dataset: NTVNUDMNFe_dw, frac: 0.75, cfac: [MAS], custom_group: FTDIS}
+- {dataset: NTVNBDMNFe_dw, frac: 0.75, cfac: [MAS], custom_group: FTDIS}
+- {dataset: HERACOMBNCEM, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMBNCEP460, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMBNCEP575, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMBNCEP820, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMBNCEP920, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMBCCEM, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMBCCEP, frac: 0.75, custom_group: HERADIS}
+- {dataset: HERACOMB_SIGMARED_C, frac: 0.75, custom_group: HERADIS}   
+- {dataset: HERACOMB_SIGMARED_B, frac: 0.75, custom_group: HERADIS}   
+- {dataset: DYE886R_dw, frac: 1.0, custom_group: FTDY}
+- {dataset: DYE886P, frac: 0.75, cfac: [QCD], custom_group: FTDY}
+- {dataset: DYE605_dw, frac: 0.75, cfac: [QCD], custom_group: FTDY}
+- {dataset: CDFZRAP_NEW, frac: 1.0, cfac: [QCD], custom_group: TEVATRON}
+- {dataset: D0ZRAP, frac: 1.0, cfac: [QCD], custom_group: TEVATRON}
+- {dataset: D0WMASY, frac: 1.0, cfac: [QCD], custom_group: TEVATRON}
+- {dataset: ATLASWZRAP36PB, frac: 1.0, cfac: [QCD], custom_group: ATLASDY}
+- {dataset: ATLASZHIGHMASS49FB, frac: 1.0, cfac: [QCD], custom_group: ATLASDY}
+- {dataset: ATLASLOMASSDY11EXT, frac: 1.0, cfac: [QCD], custom_group: ATLASDY}
+- {dataset: ATLASWZRAP11CC, frac: 0.75, cfac: [QCD], custom_group: ATLASDY}               
+- {dataset: ATLASWZRAP11CF, frac: 0.75, cfac: [QCD], custom_group: ATLASDY}               
+- {dataset: ATLASDY2D8TEV, frac: 0.75, cfac: [QCDEWK], custom_group: ATLASDY}             
+- {dataset: ATLAS_WZ_TOT_13TEV, frac: 1.0, cfac: [NRM, QCD], custom_group: ATLASDY}       
+- {dataset: ATLAS_WP_JET_8TEV_PT, frac: 0.75, cfac: [QCD], custom_group: ATLASWJ}         
+- {dataset: ATLAS_WM_JET_8TEV_PT, frac: 0.75, cfac: [QCD], custom_group: ATLASWJ}         
+- {dataset: ATLASZPT8TEVMDIST, frac: 0.75, cfac: [QCD], sys: 10, custom_group: ATLASZPT}
+- {dataset: ATLASZPT8TEVYDIST, frac: 0.75, cfac: [QCD], sys: 10, custom_group: ATLASZPT}
+- {dataset: ATLASTTBARTOT, frac: 1.0, cfac: [QCD], custom_group: ATLASTOP}
+- {dataset: ATLAS_TTB_DIFF_8TEV_LJ_TRAPNORM, frac: 1.0, cfac: [QCD], custom_group: ATLASTOP}                 
+- {dataset: ATLAS_TTB_DIFF_8TEV_LJ_TTRAPNORM, frac: 1.0, cfac: [QCD], custom_group: ATLASTOP}                
+- {dataset: ATLAS_TOPDIFF_DILEPT_8TEV_TTRAPNORM, frac: 1.0, cfac: [QCD], custom_group: ATLASTOP}             
+- {dataset: ATLAS_1JET_8TEV_R06_DEC, frac: 0.75, cfac: [QCD], custom_group: ATLAS1JET}                        
+- {dataset: ATLAS_2JET_7TEV_R06, frac: 0.75, cfac: [QCD], custom_group: ATLAS2JET}                            
+- {dataset: ATLASPHT15, frac: 0.75, cfac: [QCD, EWK], custom_group: ATLASPHT}                                
+- {dataset: ATLAS_SINGLETOP_TCH_R_7TEV, frac: 1.0, cfac: [QCD], custom_group: ATLASSTOP}                      
+- {dataset: ATLAS_SINGLETOP_TCH_R_13TEV, frac: 1.0, cfac: [QCD], custom_group: ATLASSTOP}                     
+- {dataset: ATLAS_SINGLETOP_TCH_DIFF_7TEV_T_RAP_NORM, frac: 1.0, cfac: [QCD], custom_group: ATLASSTOP}        
+- {dataset: ATLAS_SINGLETOP_TCH_DIFF_7TEV_TBAR_RAP_NORM, frac: 1.0, cfac: [QCD], custom_group: ATLASSTOP}     
+- {dataset: ATLAS_SINGLETOP_TCH_DIFF_8TEV_T_RAP_NORM, frac: 0.75, cfac: [QCD], custom_group: ATLASSTOP}       
+- {dataset: ATLAS_SINGLETOP_TCH_DIFF_8TEV_TBAR_RAP_NORM, frac: 0.75, cfac: [QCD], custom_group: ATLASSTOP}    
+- {dataset: CMSWEASY840PB, frac: 1.0, cfac: [QCD], custom_group: CMSDY}
+- {dataset: CMSWMASY47FB, frac: 1.0, cfac: [QCD], custom_group: CMSDY}
+- {dataset: CMSDY2D11, frac: 0.75, cfac: [QCD], custom_group: CMSDY}
+- {dataset: CMSWMU8TEV, frac: 1.0, cfac: [QCD], custom_group: CMSDY}
+- {dataset: CMSZDIFF12, frac: 1.0, cfac: [QCD, NRM], sys: 10, custom_group: CMSZPT}
+- {dataset: CMS_2JET_7TEV, frac: 0.75, cfac: [QCD], custom_group: CMS2JET}                                   
+- {dataset: CMS_2JET_3D_8TEV, frac: 0.75, cfac: [QCD], custom_group: CMS2JET}                               
+- {dataset: CMSTTBARTOT, frac: 1.0, cfac: [QCD], custom_group: CMSTOP}
+- {dataset: CMSTOPDIFF8TEVTTRAPNORM, frac: 1.0, cfac: [QCD], custom_group: CMSTOP}
+- {dataset: CMSTTBARTOT5TEV, frac: 1.0, cfac: [QCD], custom_group: CMSTOP}                                 
+- {dataset: CMS_TTBAR_2D_DIFF_MTT_TRAP_NORM, frac: 1.0, cfac: [QCD], custom_group: CMSTOP}                 
+- {dataset: CMS_TTB_DIFF_13TEV_2016_2L_TRAP, frac: 1.0, cfac: [QCD], custom_group: CMSTOP13}                 
+- {dataset: CMS_TTB_DIFF_13TEV_2016_LJ_TRAP, frac: 1.0, cfac: [QCD], custom_group: CMSTOP13}                 
+- {dataset: CMS_SINGLETOP_TCH_TOT_7TEV, frac: 1.0, cfac: [QCD], custom_group: CMSSTOP}                      
+- {dataset: CMS_SINGLETOP_TCH_R_8TEV, frac: 1.0, cfac: [QCD], custom_group: CMSSTOP}                        
+- {dataset: CMS_SINGLETOP_TCH_R_13TEV, frac: 1.0, cfac: [QCD], custom_group: CMSSTOP}                       
+- {dataset: LHCBZ940PB, frac: 1.0, cfac: [QCD], custom_group: LHCB}
+- {dataset: LHCBZEE2FB, frac: 1.0, cfac: [QCD], custom_group: LHCB}
+- {dataset: LHCBWZMU7TEV, frac: 1.0, cfac: [NRM, QCD], custom_group: LHCB}
+- {dataset: LHCBWZMU8TEV, frac: 1.0, cfac: [NRM, QCD], custom_group: LHCB}
+- {dataset: LHCB_Z_13TEV_DIMUON, frac: 1.0, cfac: [QCD], custom_group: LHCB}                             
+- {dataset: LHCB_Z_13TEV_DIELECTRON, frac: 1.0, cfac: [QCD], custom_group: LHCB}                         
+
+
+template_text: |
+
+    ## Chi2
+    {@ groups_chi2_table @}
+
+actions_:
+    - report(main=True)
